@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #270341, #000000);
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #70eb87;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: #035a71;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #000
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centers the buttons horizontally */
+    background-color: transparent; /* optional: adds a background */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav ul li a:hover {
+    background: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.center-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 1.7rem;
+}
+
+.no-underline {
+    color: inherit; /* Makes the link use the surrounding text color */
+}
+
+.social-links li a:hover,
+.social-links li a:hover i {
+    color: #fff;
+}
+
+.resume-download {
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.resume-download:hover {
+    color: #ff3700; /* Choose any bright color you like */
+}
